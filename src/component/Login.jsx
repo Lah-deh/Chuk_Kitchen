@@ -26,7 +26,7 @@ const Login = () => {
           </div>
 
           <label htmlFor='password' className='text-[16px] font-normal text-[#1F2937]'>Password</label>
-          <div className='relative mt-2 mb-4'>
+          <div className='relative mt-2 mb-4 '>
             <IoMdLock className='absolute left-3 top-1/2 -translate-y-1/2 text-[#BDBDBD] text-[20px]' />  
             <input 
             type='password' 
@@ -44,7 +44,19 @@ const Login = () => {
           <p className=' text-[#1F2937] text-[12px] font-normal mt-3 text-center'>
             or continue with
           </p>
-            
+          <div>
+            <button className='flex items-center justify-center gap-3 mt-3 mb-4 w-full border-2 border-[#BDBDBD] rounded-lg py-3'>
+                <FcGoogle className='text-[20px]' />
+                <span>Continue with Google</span>
+            </button>
+            <button className='flex items-center justify-center gap-3 mt-3 mb-4 w-full border-2 border-[#BDBDBD] rounded-lg py-3'>
+                <SiFacebook className='text-[20px] text-[#1E88E5]' />
+                <span>Continue with Facebook</span>
+            </button>
+          </div>
+          <p className='text-[#1F2937] text-[12px] font-normal mt-3 text-center mb-10'>
+            Dont have an account? <span className='text-[#1E88E5]'>Create an account</span>
+          </p>
           
         </form>
       </div>
