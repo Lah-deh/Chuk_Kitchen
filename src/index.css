@@ -1,0 +1,27 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Island+Moments&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playpen+Sans:wght@100..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Island+Moments&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Playpen+Sans:wght@100..800&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+  --font-primary:'Inter', sans-serif;
+  --font-secondary:'Dancing Script', Island Moments;
+}
+body{
+  font-family: var(--font-primary);
+  margin-left: 4%;
+  margin-right: 4%;
+}
+@layer base{
+  .chuk{
+    @apply text-[#FF7A18] italic text-center text-[40px] tracking-wide font-extralight mt-7;
+    font-family: var(--font-secondary);
+  }
+  .card{
+    @apply bg-[#F3F4F6] border-2 border-[#E5E7EB] rounded-lg shadow-md; 
+  }
+  
+}
