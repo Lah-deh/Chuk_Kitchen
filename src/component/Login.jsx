@@ -12,9 +12,9 @@ const Login = () => {
         <h1 className='chuk'>Chuks Kitchen</h1>
         <h2 className='text-[24px] font-[650] text-center'>Login your Account</h2>
       </div>
-      <div>
+      <div className='mt-4'>
         <form>
-          <label htmlFor='email' className='text-[16px] font-normal text-[#1F2937]'>Email or Phone number</label>
+          <label htmlFor='email' className='text-[16px] font-normal text-[#1F2937] '>Email or Phone number</label>
           <div className='relative mt-2 mb-4'>
             <MdMail className='absolute left-3 top-1/2 -translate-y-1/2 text-[#BDBDBD] text-[20px]' />
             <input 
