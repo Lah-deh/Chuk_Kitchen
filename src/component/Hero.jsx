@@ -6,7 +6,7 @@ import { Link } from 'react-router'
 
 const Hero = () => {
   return (
-    <div>
+    <div className='page'>
       <div className=' mt-5'>
         <img src={HeroMobile} alt='Hero'/>
         <div className='flex justify-end'> 

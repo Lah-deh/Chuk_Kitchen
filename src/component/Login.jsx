@@ -1,18 +1,18 @@
 import React from 'react'
 import { MdMail } from "react-icons/md"
 import { IoMdLock } from "react-icons/io";
-
+import { Link } from 'react-router';  
 import { FcGoogle } from "react-icons/fc";
 import { SiFacebook } from "react-icons/si";
 
 const Login = () => {
   return (
-    <div>
+    <div className='page'>
       <div>
         <h1 className='chuk'>Chuks Kitchen</h1>
-        <h2 className='text-[24px] font-[650] text-center'>Login your Account</h2>
+        <h2 className='text-[24px] font-medium text-center'>Login your Account</h2>
       </div>
-      <div className='mt-4'>
+      <div className='mt-4'>  
         <form>
           <label htmlFor='email' className='text-[16px] font-normal text-[#1F2937] '>Email or Phone number</label>
           <div className='relative mt-2 mb-4'>
@@ -20,7 +20,7 @@ const Login = () => {
             <input 
               type='text' 
               id='email' 
-              className='w-full border-[#BDBDBD] border-2 rounded-lg py-3 px-4 pl-10' 
+              className='w-full border-[#BDBDBD] border-2 rounded-lg py-3 px-4 pl-10 hover:border-[#1E88E5] focus:outline-none focus:border-[#1E88E5]' 
               placeholder='name@gmail.com' 
             />
           </div>
@@ -31,7 +31,7 @@ const Login = () => {
             <input 
             type='password' 
             id='password' 
-            className='w-full border-[#BDBDBD] border-2 rounded-lg py-3 px-8 ' 
+            className='w-full border-[#BDBDBD] border-2 rounded-lg py-3 px-8 hover:border-[#1E88E5] focus:outline-none focus:border-[#1E88E5]' 
             placeholder='*******' 
           />  
           </div>
@@ -39,7 +39,7 @@ const Login = () => {
             Forgot Password?
           </p>
           <button className='text-white bg-[#FF7A18] w-full py-3.5 mt-5 rounded-xl'>
-            Continue
+            <Link to='/discover'>Continue</Link>
           </button>
           <p className=' text-[#1F2937] text-[12px] font-normal mt-3 text-center'>
             or continue with
@@ -55,7 +55,10 @@ const Login = () => {
             </button>
           </div>
           <p className='text-[#1F2937] text-[12px] font-normal mt-3 text-center mb-10'>
-            Dont have an account? <span className='text-[#1E88E5]'>Create an account</span>
+            Dont have an account? 
+            <span className='text-[#1E88E5]'>
+              <Link to="/create">Create an account</Link>
+            </span>
           </p>
           
         </form>

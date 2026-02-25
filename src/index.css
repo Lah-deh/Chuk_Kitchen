@@ -11,9 +11,7 @@
   --font-secondary:'Dancing Script', Island Moments;
 }
 body{
-  font-family: var(--font-primary);
-  margin-left: 4%;
-  margin-right: 4%;
+  background-color: #F3F4F6;
 }
 @layer base{
   .chuk{
@@ -22,6 +20,15 @@ body{
   }
   .card{
     @apply bg-[#F3F4F6] border-2 border-[#E5E7EB] rounded-lg shadow-md; 
+  }
+  .chuks{
+    @apply text-[#FF7A18] italic text-center text-[24px] tracking-wide font-extralight ;
+    font-family: var(--font-secondary);
+  }
+  .page{
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: var(--font-primary);
   }
   
 }
