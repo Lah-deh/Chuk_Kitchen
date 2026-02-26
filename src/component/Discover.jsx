@@ -2,25 +2,27 @@ import React from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import bg from '../assets/Sign in.png'
 import { Link } from 'react-router'
+import Header from'./Header'
+import Welcome from '../assets/Welcome.png'
 
 
 
 const Discover = () => {
   return (
     <div  className=''>
-      <div className='flex justify-between items-center p-3'>
-        <h1 className='chuks '>
-            Chuks Kitchen
-        </h1>
-        <RxHamburgerMenu className='text-[24px] text-[#1F2937]' />
-      </div>
+      <Header/>
       <div>
         <div
-            className="h-screen bg-cover bg-center relative " 
+            className="h-screen bg-cover bg-center relative sm:hidden " 
             style={{ backgroundImage: `url(${bg})` }}
             >
         </div>
-        <div className='absolute top-1/3 pl-5 text-white '>
+        <div
+            className="h-screen bg-cover bg-center relative hidden sm:block " 
+            style={{ backgroundImage: `url(${Welcome})` }}
+            >
+        </div>
+        <div className='absolute top-1/3 pl-5 text-white  sm:top-1/2 sm:pl-20'>
         <h1 className='text-white text-[30px] font-semibold tracking-wide'>
             The Heart of Nigerian Home Cooking
         </h1>

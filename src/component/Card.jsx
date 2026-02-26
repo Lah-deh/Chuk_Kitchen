@@ -1,14 +1,13 @@
 import React from "react";
 
-const Card = ({ image, title, description, price }) => {
+const Card = ({ image, title, description, price, className ='' }) => {
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-3 flex gap-3 items-start">
-
-      <img
-        src={image}
-        alt={title}
-        className="w-20 h-20 object-cover rounded-md"
-      />
+    <div className={`bg-white rounded-lg shadow-sm border border-gray-200 p-3 flex gap-3 items-start w-full ${className}`} >
+        <img
+            src={image}
+            alt={title}
+            className="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-md shrink-0"
+        />
 
       <div className="flex-1">
 
