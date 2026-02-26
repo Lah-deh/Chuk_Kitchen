@@ -28,7 +28,7 @@ const Discover = () => {
             Handcrafted with passion, delivered with care.
         </p>
         <button className='font-primary text-white bg-[#FF7A18] rounded-lg py-3 px-6  mt-6 text-[13px] '>
-                <Link to='/login'>Discover what's new</Link>
+                <Link to='/menu'>Discover what's new</Link>
         </button>
         </div>
       </div> 
