@@ -7,7 +7,7 @@ Live site: https://chuk-kitchen.vercel.app/
 
 Source code: https://github.com/Lah-deh/Chuk_Kitchen
 
-##Project Overview
+## Project Overview
 
 Chuks Kitchen is a food ordering web interface built for Mr. Chukwudi Okorie’s Nigerian home cooking business.
 
@@ -17,7 +17,7 @@ Users can browse meals, explore categories, register an account, and move throug
 
 This is a frontend-only implementation. There is no backend, authentication, or API integration.
 
-##Tech Stack
+## Tech Stack
 
 React (Vite)
 Component-based UI development and fast development environment.
@@ -39,7 +39,7 @@ Why these tools:
 
 -Vite provides fast startup and hot reload during development
 
-Project Structure
+## Project Structure
 
 src/
 
@@ -76,7 +76,7 @@ App.jsx → route configuration
 index.css → global styles and custom classes
 main.jsx → application entry point
 
-Pages Implemented
+## Pages Implemented
 
 Home ( / )
 Landing page with hero section, feature cards, and navigation.
@@ -93,7 +93,7 @@ Account creation form.
 Menu ( /menu )
 Food listing with category layout and card grid.
 
-Design Implementation Approach
+## Design Implementation Approach
 
 Layout
 Desktop uses a split-screen layout with image and content sections. Mobile stacks content vertically for better readability.
@@ -107,7 +107,7 @@ Shared UI elements such as header, footer, and food cards were separated into re
 Responsiveness
 Tailwind breakpoints are used to adjust layout and grid structure across screen sizes. Food items display in a single column on mobile and multiple columns on larger screens.
 
-Assumptions made:
+## Assumptions made:
 
 Navigation highlighting was not implemented
 
@@ -117,7 +117,7 @@ Category filters are visual only and do not change data
 
 Buttons do not trigger real actions
 
-Custom CSS Classes
+ ## Custom CSS Classes
 
 Defined in index.css:
 
@@ -130,7 +130,7 @@ Brand heading style.
 .card
 Hero page feature card styling.
 
-Limitations
+## Limitations
 
 All data is static. No external data source.
 
@@ -142,7 +142,7 @@ Menu category filters are not functional.
 
 Navigation does not track active routes.
 
-Improvements With More Time
+## Improvements With More Time
 
 Add global cart state using React Context or Zustand.
 
@@ -158,7 +158,7 @@ Add accessibility enhancements.
 
 Add component testing.
 
-Running the Project
+## Running the Project
 
 Clone the repository
 
@@ -170,6 +170,6 @@ Build for production
 
 npm run build
 
-Live Preview
+## Live Preview
 
 https://chuk-kitchen.vercel.app/
